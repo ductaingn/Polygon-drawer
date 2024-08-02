@@ -14,66 +14,60 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>441</width>
-      <height>281</height>
-     </rect>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="1" rowspan="2">
-      <widget class="QLineEdit" name="le_link_cam"/>
-     </item>
-     <item row="3" column="1" rowspan="2">
-      <widget class="QListView" name="lv_list_point"/>
-     </item>
-     <item row="1" column="2" rowspan="2">
-      <widget class="QPushButton" name="btn_start_viewing">
-       <property name="text">
-        <string>Start viewing</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0" rowspan="2">
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>Link cam</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0" rowspan="2">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>Points</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="2">
-      <widget class="QPushButton" name="btn_clear_polygon">
-       <property name="text">
-        <string>Clear Polygon</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="2">
-      <widget class="QPushButton" name="btn_extract_polygon">
-       <property name="text">
-        <string>Extract Polygon</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0" colspan="3">
-      <widget class="QLabel" name="stream_window">
-       <property name="text">
-        <string>No stream available</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1" rowspan="2">
+       <widget class="QLineEdit" name="le_link_cam"/>
+      </item>
+      <item row="3" column="1" rowspan="2">
+       <widget class="QListView" name="lv_list_point"/>
+      </item>
+      <item row="1" column="2" rowspan="2">
+       <widget class="QPushButton" name="btn_start_viewing">
+        <property name="text">
+         <string>Start viewing</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" rowspan="2">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Link cam</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" rowspan="2">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Points</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="btn_clear_polygon">
+        <property name="text">
+         <string>Clear Polygon</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="btn_extract_polygon">
+        <property name="text">
+         <string>Extract Polygon</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLabel" name="stream_window">
+        <property name="text">
+         <string>No stream available</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
