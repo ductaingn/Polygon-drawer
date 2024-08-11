@@ -23,7 +23,6 @@ class MainWindow(QtWidgets.QMainWindow):
         # self.detect_thread.setStreamThread(self.stream_thread)
         # self.stream_thread.updateFrame.connect(self.setImage)
 
-        self.ui.le_link_cam.setText('rtsp://admin:Atin%40123123@192.168.1.229/profile2/media.smp')
         self.ui.btn_start_viewing.clicked.connect(self.start_stream)
         self.ui.btn_extract_polygon.clicked.connect(self.extractPoints)
         self.ui.btn_clear_polygon.clicked.connect(self.clearPoints)
