@@ -6,7 +6,7 @@ import cv2
 from PyQt5.QtGui import QPixmap, QImage
 from PyQt5.QtCore import Qt, QThread, pyqtSignal as Signal, pyqtSlot as Slot
 import cv2.data
-from ultralytics import YOLO
+# from ultralytics import YOLO
 from collections import defaultdict
 import numpy as np
 from queue import Queue
@@ -24,7 +24,12 @@ class StreamThread(QThread):
     def set_link_cam(self, link):
         if self.link_cam != link:
             self.link_cam = link
-            self.cap = cv2.VideoCapture(self.link_cam)
+            try:
+                self.cap = cv2.VideoCapture(self.link_cam)
+            except Exception as e:
+                print(f'An error has occured with cv2.VideoCapture with link: {self.link_cam}')
+                print(e)
+                return
         self.status = True
 
 
