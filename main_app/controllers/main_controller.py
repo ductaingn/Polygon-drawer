@@ -19,6 +19,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
+        # self.updateStream
         self.ui.setupUi(self)
         self.setWindowTitle("Polygon Drawer")
 
