@@ -28,7 +28,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # self.stream_thread.updateFrame.connect(self.setImage)
 
         self.ui.le_link_cam.setText(
-            "rtsp://admin:Atin%40123123@192.168.1.229/profile2/media.smp"
+            "rtsp://admin:atin%402022@192.168.1.231/profile1/media.smp"
         )
         self.ui.btn_start_viewing.clicked.connect(self.start_stream)
         self.ui.btn_extract_polygon.clicked.connect(self.extractPoints)
@@ -88,6 +88,7 @@ class MainWindow(QtWidgets.QMainWindow):
             self.model.appendRow(item)
 
     def paintEvent(self, event):
+        self.ui.canvas.setGeometry(self.ui.stream_window.geometry())
         # print(self.stream_thread.frame_queue.qsize())
         if self.stream_thread.frame_queue.qsize() > 0:
             frame = self.stream_thread.frame_queue.get()
